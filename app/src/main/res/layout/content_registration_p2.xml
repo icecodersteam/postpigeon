@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Вы почти у цели!"
+            android:id="@+id/textView4"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Шаг 2/2"
+            android:id="@+id/textView5"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:paddingBottom="15dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/registration_first"
+            android:layout_below="@+id/registration_password"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/registration_password"
+            android:layout_alignEnd="@+id/registration_password"
+            android:hint="Имя"
+            android:background="@drawable/inputfields"
+            android:gravity="center"
+            android:height="36dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:minWidth="200dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/registration_last"
+            android:layout_below="@+id/registration_first"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/registration_first"
+            android:layout_alignEnd="@+id/registration_first"
+            android:hint="Фамилия"
+            android:background="@drawable/inputfields"
+            android:gravity="center"
+            android:height="36dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/registration_avatar"
+            android:layout_below="@+id/registration_getavatar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/registration_registr"
+            android:layout_alignRight="@+id/registration_avatarpath"
+            android:layout_alignEnd="@+id/registration_avatarpath"
+            android:maxWidth="200dip"
+            android:minHeight="200dip"
+            android:minWidth="200dip"
+            android:maxHeight="200dip"
+            android:onClick="GetAvatarClick"
+            android:background="@drawable/avatarspace"
+            android:scaleType="centerCrop"
+            android:outlineProvider="none"
+            android:longClickable="true" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:id="@+id/registration_registr"
+            android:onClick="RegistrationClick"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/inputfields"
+            android:gravity="center"
+            android:height="36dp" />
+    </TableRow>
+
+</TableLayout>

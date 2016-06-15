@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="2dp" android:bottom="2dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <solid android:color="@color/inputfield"/>
+            <stroke android:width="1dip" android:color="#000000" android:dashWidth="20dp"
+                android:dashGap="3dp"/>
+
+        </shape>
+    </item>
+</layer-list>
